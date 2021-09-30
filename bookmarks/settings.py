@@ -33,7 +33,7 @@ SECRET_KEY = (
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -163,8 +163,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_REDIRECT_URL = "dashboard"
 LOGIN_URL = "login"
 LOGOUT_URL = "logout"
-
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
